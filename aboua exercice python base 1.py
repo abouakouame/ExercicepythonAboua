@@ -6,7 +6,7 @@
 
 masse = float(input("Saisir votre poids (en kg) : "))
 taille = float(input("Saisir votre taille (en cm) : "))
-taille = taille/100
+taille /= 100
 IMC = masse/taille/taille
 print("Votre IMC est de ",round(IMC,2))
 print("Votre corpulence est classée dans la catégorie : ",end="")
@@ -29,7 +29,7 @@ else:
 # In[13]:
 
 
-note=float(input("saisir une note : ")) 
+note=float(input("saisir une note : "))
 if note<10 :
     print("non admis") 
 elif note<=10.9 :

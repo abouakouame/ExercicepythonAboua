@@ -8,7 +8,7 @@
 
 # Exercice 1.1
 # une fonction qui retourne la factorielle d'un nombre entier N.
-N=int(input("saisir un nombre ")) 
+N=int(input("saisir un nombre "))
 F=1
 for i in range(2,N+1) :
     F*=i
@@ -70,8 +70,8 @@ liste_sans = []
 for i in liste:
     if i not in liste_sans:
         liste_sans.append(i)
- 
-         
+
+
 liste_sans
 [1, 2, 5, 8, 47, 9, 6]
 
@@ -89,17 +89,15 @@ liste_sans
 
 # Exercice 1.2
 liste = [N]
-N=int(input("saisir un nombre ")) 
+N=int(input("saisir un nombre "))
 impair = []
-a = 0
 b = len(liste)
-while a < b:
-	d = liste[a]
-	if d % 2:
-		impair.append(d)
-	else:
-		pair.append(d)
-	a = a + 1
+for a in range(b):
+    d = liste[a]
+    if d % 2:
+    	impair.append(d)
+    else:
+    	pair.append(d)
 print ("De la liste donnée 32 5 12 8 3 75 2 15")
 print ("les chiffres impairs sont", impair)
 
